@@ -1,0 +1,50 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background: var(--container-bg);
+    border-left: 4px solid var(--accent);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.left-column img {
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.right-column h1 {
+    margin-top: 0;
+    color: var(--btn-leather);
+}
+
+.right-column p {
+    margin: 5px 0;
+    color: var(--text);
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.actions .btn {
+    display: inline-block;
+    padding: 8px 12px; /* plus petit que avant */
+    font-size: 0.9rem;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, var(--btn-leather), var(--btn-leather-hover));
+    color: var(--surface);
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.actions .btn:hover {
+    background: linear-gradient(135deg, var(--btn-leather-hover), var(--btn-leather));
+    transform: translateY(-2px);
+}
