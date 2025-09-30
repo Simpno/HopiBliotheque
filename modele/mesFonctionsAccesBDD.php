@@ -3,9 +3,9 @@
 // --- Connexion à la BDD ---
 function connect(): PDO {
     $host = 'localhost';
-    $db = 'dblogin4222';
-    $user = 'login4222';
-    $pass = 'ydLugQuPXmChIwb';
+    $db = 'hopibiblio';
+    $user = 'root';
+    $pass = '';
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
